@@ -8,7 +8,7 @@ require('dotenv').config({
 });
 
 // Setup and connect to mongoDB
-var mongourl = process.env.MONGODB_URI || 'mongodb://' + process.env.IP + ':27017';
+var mongourl = process.env.MONGODB_URI || 'mongodb://admin:admin@ds033135.mlab.com:33135/recent';
 mongoose.Promise = global.Promise;
 mongoose.connect(mongourl);
 
