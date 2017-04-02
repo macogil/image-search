@@ -1,0 +1,17 @@
+{
+  "name": "image-share",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.9.2",
+    "node-bing-api": "^3.2.1",
+    "request": "^2.81.0"
+  }
+}
