@@ -3,9 +3,12 @@ var path = require ('path');
 var mongoose = require('mongoose');
 var Bing = require('node-bing-api')({ accKey: "51f5ca5af5d746268180bcbc545d4e92" });
 var router = express.Router();
+require('dotenv').config({
+  silent: true
+});
 
 // Setup and connect to mongoDB
-var mongourl = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017';
+var mongourl = process.env.MONGODB_URI || 'mongodb://' + process.env.IP + ':27017';
 mongoose.Promise = global.Promise;
 mongoose.connect(mongourl);
 
